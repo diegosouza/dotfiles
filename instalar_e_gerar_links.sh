@@ -8,4 +8,5 @@ ln --force -s ~/dotfiles/.gitconfig ~/.gitconfig
 ln --force -s ~/dotfiles/.gitignore ~/.gitignore
 ln --force -s ~/dotfiles/.vimrc ~/.vimrc
 ln --force -s ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln --force -s ~/dotfiles/.bash_profile ~/.bash_profile 
 ln --force -s ~/dotfiles/.zshrc ~/.zshrc 
