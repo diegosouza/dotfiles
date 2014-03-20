@@ -1,0 +1,14 @@
+[user]
+	name = Diego Souza
+	email = diegosouza.br@gmail.com
+[color]
+	ui = true
+[push]
+	default = tracking
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+[merge]
+	tool = meld
+[diff]
+	tool = meld
