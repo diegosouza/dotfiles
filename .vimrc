@@ -47,6 +47,9 @@ autocmd FileType ruby,eruby set ts=2|set sw=2|set sts=2
 vnoremap < <gv
 vnoremap > >gv
 
+" Salvar arquivo ao pressionar esc 2 vezes seguidas
+map <Esc><Esc> :w<CR> 
+
 :filetype plugin on
 :filetype plugin indent on
 
