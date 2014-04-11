@@ -33,3 +33,6 @@ config/initializers/secret_token.rb
 *.jar
 *.war
 *.ear
+
+# ctags
+tags

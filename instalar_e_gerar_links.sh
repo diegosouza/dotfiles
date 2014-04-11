@@ -11,3 +11,4 @@ ln --force -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln --force -s ~/dotfiles/.bash_profile ~/.bash_profile 
 ln --force -s ~/dotfiles/.bash_aliases ~/.bash_aliases 
 ln --force -s ~/dotfiles/.zshrc ~/.zshrc 
+ln --force -s ~/dotfiles/.ctags ~/.ctags 
