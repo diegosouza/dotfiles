@@ -6,15 +6,15 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'airblade/vim-gitgutter'
-Bundle 'Townk/vim-autoclose'
-Bundle 'diegosouza/snipmate.vim'
 
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_working_path_mode='' "Pesquisa a partir do diretório atual no Vim. 
+let g:ctrlp_extensions = ['tag']
 
 Bundle 'scrooloose/syntastic'
-Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 Bundle 'maciakl/vim-neatstatus'
+Bundle 'mileszs/ack.vim'
+Bundle 'jiangmiao/auto-pairs'
 Bundle 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
 
