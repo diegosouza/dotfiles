@@ -40,6 +40,7 @@ set incsearch       " Pesquisa incremental
 set hlsearch        " Highligth search :)
 set ignorecase      " Pesquisa ignora caixa alta e baixa
 set smartcase       " Pesquisa considera caixa alta apenas se ouver uma ou mais maiúsculas na pesquisa
+set lazyredraw      " alivia lentidão ao navegar e renderizar a tela
 
 autocmd FileType ruby,eruby set ts=2|set sw=2|set sts=2
 
