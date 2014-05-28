@@ -52,6 +52,8 @@ autocmd FileType ruby,eruby set ts=2|set sw=2|set sts=2
 vnoremap < <gv
 vnoremap > >gv
 
+set clipboard=unnamedplus " integra com área de tranf. do sistema se VIM compilado com +xterm_clipboard
+
 " set leader key to comma
 let mapleader = ","
 
