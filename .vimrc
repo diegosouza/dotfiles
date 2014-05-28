@@ -9,7 +9,6 @@ Bundle 'airblade/vim-gitgutter'
 
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_working_path_mode='' "Pesquisa a partir do diretório atual no Vim. 
-let g:ctrlp_extensions = ['tag']
 let g:ctrlp_match_window = 'max:20,results:20'
 
 Bundle 'scrooloose/syntastic'
