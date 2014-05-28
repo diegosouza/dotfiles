@@ -19,7 +19,6 @@ map <Leader>l :call RunLastSpec()<CR>
 Bundle 'scrooloose/syntastic'
 Bundle 'maciakl/vim-neatstatus'
 Bundle 'mileszs/ack.vim'
-Bundle 'jiangmiao/auto-pairs'
 Bundle 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
 
@@ -67,6 +66,9 @@ noremap <C-l> :nohlsearch<CR>
  
 " Salvar arquivo ao pressionar esc 2 vezes seguidas
 map <Esc><Esc> :w<CR> 
+
+" atalho para nova aba, já que utilizo muito...
+nmap <C-w>t :tabnew<CR>
 
 :filetype plugin on
 :filetype plugin indent on
