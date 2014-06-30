@@ -25,8 +25,7 @@ nmap <F8> :TagbarToggle<CR>
 syntax enable       " Habilita a marcação de sintaxe
 set encoding=utf-8
 
-set foldmethod=syntax
-set foldlevelstart=10
+set foldmethod=manual
 
 set showmode        " Exibe o modo atual
 set wildmenu        " Menu com as opções do vim usando tab
