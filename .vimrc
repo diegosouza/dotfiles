@@ -5,10 +5,12 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle 'airblade/vim-gitgutter'
+" set leader key to comma
+let mapleader = ","
 
+Bundle 'airblade/vim-gitgutter'
 Bundle 'kien/ctrlp.vim'
-let g:ctrlp_working_path_mode='' "Pesquisa a partir do diretório atual no Vim. 
+let g:ctrlp_working_path_mode='' "Pesquisa a partir do diretório atual no Vim.
 let g:ctrlp_match_window = 'max:20,results:20'
 
 Bundle 'thoughtbot/vim-rspec'
@@ -58,14 +60,11 @@ vnoremap > >gv
 
 set clipboard=unnamedplus " integra com área de tranf. do sistema se VIM compilado com +xterm_clipboard
 
-" set leader key to comma
-let mapleader = ","
+" clear the command line and search highlighting
+noremap <C-l> :nohlsearch<CR>
 
-" clear the command line and search highlighting 
-noremap <C-l> :nohlsearch<CR> 
- 
 " Salvar arquivo ao pressionar esc 2 vezes seguidas
-map <Esc><Esc> :w<CR> 
+map <Esc><Esc> :w<CR>
 
 " atalho para nova aba, já que utilizo muito...
 nmap <C-w>t :tabnew<CR>
