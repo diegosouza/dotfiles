@@ -33,7 +33,8 @@ Return a list of installed packages or nil for every skipped package."
 			  'restclient
 			  'expand-region
 			  'markdown-mode
-			  'php-mode)
+			  'php-mode
+			  ido-vertical-mode)
 
 (require 'evil)
 (evil-mode t)
@@ -50,9 +51,12 @@ Return a list of installed packages or nil for every skipped package."
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
 (toggle-frame-maximized)
+(ido-mode t)
+(ido-vertical-mode t)
 (global-hl-line-mode)
 (global-linum-mode t)
 (show-paren-mode 1)
+
 (global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
 (global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "S-C-<down>") 'shrink-window)
