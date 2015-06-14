@@ -53,3 +53,7 @@ Return a list of installed packages or nil for every skipped package."
 (global-hl-line-mode)
 (global-linum-mode t)
 (show-paren-mode 1)
+(global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "S-C-<down>") 'shrink-window)
+(global-set-key (kbd "S-C-<up>") 'enlarge-window)
