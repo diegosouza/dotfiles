@@ -33,15 +33,11 @@ Return a list of installed packages or nil for every skipped package."
 			  'restclient
 			  'expand-region
 			  'markdown-mode
-			  'php-mode
-			  ido-vertical-mode)
+			  'web-mode
+			  'ido-vertical-mode)
 
-(require 'evil)
 (evil-mode t)
-(require 'powerline)
 (powerline-default-theme)
-(require 'powerline-evil)
-(require 'expand-region)
 (global-set-key (kbd "M-S-<up>") 'er/expand-region)
 (global-set-key (kbd "M-S-<down>") 'er/contract-region)
 
