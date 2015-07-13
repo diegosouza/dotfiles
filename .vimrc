@@ -13,10 +13,8 @@ Bundle 'kien/ctrlp.vim'
 let g:ctrlp_working_path_mode='' "Pesquisa a partir do diretório atual no Vim.
 let g:ctrlp_match_window = 'max:20,results:20'
 
-Bundle 'thoughtbot/vim-rspec'
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>n :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
+Bundle 'aquach/vim-http-client'
+let g:http_client_result_vsplit = 0
 
 Bundle 'scrooloose/syntastic'
 Bundle 'maciakl/vim-neatstatus'
