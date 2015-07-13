@@ -26,14 +26,14 @@ Return a list of installed packages or nil for every skipped package."
 
 ;; Assuming you wish to install them
 (ensure-package-installed 'evil
-			  'flycheck
-			  'iedit
-			  'powerline
-			  'powerline-evil
-			  'restclient
-			  'expand-region
-			  'markdown-mode
-			  'web-mode)
+                          'flycheck
+                          'iedit
+                          'powerline
+                          'powerline-evil
+                          'restclient
+                          'expand-region
+                          'markdown-mode
+                          'web-mode)
 
 ;; evil-mode
 (evil-mode t)
@@ -51,9 +51,12 @@ Return a list of installed packages or nil for every skipped package."
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
-(global-linum-mode t)
-(setq linum-format "%4d\u2502")
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq-default tab-always-indent t)
 (show-paren-mode 1)
+(setq whitespace-style (quote (spaces tabs space-mark tab-mark)))
+(global-visual-line-mode 1)
 
 (global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
 (global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
@@ -90,10 +93,11 @@ Return a list of installed packages or nil for every skipped package."
      ("#A41F99" . 85)
      ("#49483E" . 100))))
  '(inhibit-startup-screen t)
+ '(linum-format (quote dynamic))
  '(magit-diff-use-overlays nil)
  '(menu-bar-mode nil)
- '(tool-bar-mode nil)
  '(ps-use-face-background nil)
+ '(tool-bar-mode nil)
  '(uniquify-buffer-name-style (quote forward) nil (uniquify))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
