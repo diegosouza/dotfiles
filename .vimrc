@@ -8,6 +8,7 @@ call vundle#rc()
 " set leader key to comma
 let mapleader = ","
 
+Bundle 'tpope/vim-surround'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_working_path_mode='' "Pesquisa a partir do diretório atual no Vim.
