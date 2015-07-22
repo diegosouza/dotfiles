@@ -50,6 +50,7 @@ set smartcase       " Pesquisa considera caixa alta apenas se ouver uma ou mais 
 set lazyredraw      " alivia lentidão ao navegar e renderizar a tela
 
 autocmd FileType ruby,eruby set ts=2|set sw=2|set sts=2
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 autocmd BufWritePre * :%s/\s\+$//e " remove espaços no final das linhas
 
 " Opções para que blocos selecionados sejam reselecionados após identações.
