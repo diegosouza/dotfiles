@@ -18,7 +18,12 @@ Bundle 'aquach/vim-http-client'
 let g:http_client_result_vsplit = 0
 
 Bundle 'scrooloose/syntastic'
-Bundle 'maciakl/vim-neatstatus'
+Bundle 'bling/vim-airline'
+let g:airline_powerline_fonts=1
+ret g:airline_detect_paste=1
+let g:airline#extensions#branch#enabled=1
+let g:airline#extensions#syntastic#enabled=1
+
 Bundle 'mileszs/ack.vim'
 Bundle 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
