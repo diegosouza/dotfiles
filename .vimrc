@@ -8,6 +8,7 @@ call vundle#rc()
 " set leader key to comma
 let mapleader = ","
 
+Bundle 'tpope/vim-surround'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_working_path_mode='' "Pesquisa a partir do diretório atual no Vim.
@@ -50,6 +51,7 @@ set smartcase       " Pesquisa considera caixa alta apenas se ouver uma ou mais 
 set lazyredraw      " alivia lentidão ao navegar e renderizar a tela
 
 autocmd FileType ruby,eruby set ts=2|set sw=2|set sts=2
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 autocmd BufWritePre * :%s/\s\+$//e " remove espaços no final das linhas
 
 " Opções para que blocos selecionados sejam reselecionados após identações.
