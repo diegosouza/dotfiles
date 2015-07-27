@@ -17,6 +17,7 @@ let g:ctrlp_match_window = 'max:20,results:20'
 Bundle 'aquach/vim-http-client'
 let g:http_client_result_vsplit = 0
 
+Bundle 'tpope/vim-vinegar'
 Bundle 'scrooloose/syntastic'
 Bundle 'bling/vim-airline'
 let g:airline_powerline_fonts=1
