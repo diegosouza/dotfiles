@@ -82,6 +82,18 @@ map <Esc><Esc> :w<CR>
 " atalho para nova aba, já que utilizo muito...
 nmap <C-w>t :tabnew<CR>
 
+" To open a new empty buffer
+nmap <leader>T :enew<cr>
+
+" Move to the next buffer
+nmap <leader>l :bnext<CR>
+
+" Move to the previous buffer
+nmap <leader>h :bprevious<CR>
+
+" Close the current buffer and move to the previous one
+nmap <leader>bq :bp <BAR> bd #<CR>
+
 :filetype plugin on
 :filetype plugin indent on
 
