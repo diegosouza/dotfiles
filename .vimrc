@@ -13,6 +13,11 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_working_path_mode='' "Pesquisa a partir do diretório atual no Vim.
 let g:ctrlp_match_window = 'max:20,results:20'
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.(git|svn))$',
+  \ 'file': '\v\.(so|class|gif|png|jpg|jpeg)$',
+\}
 
 Bundle 'aquach/vim-http-client'
 let g:http_client_result_vsplit = 0
