@@ -29,6 +29,8 @@ let g:airline_powerline_fonts=1
 ret g:airline_detect_paste=1
 let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#syntastic#enabled=1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
 
 Bundle 'mileszs/ack.vim'
 Bundle 'majutsushi/tagbar'
