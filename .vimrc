@@ -8,6 +8,7 @@ call vundle#rc()
 " set leader key to comma
 let mapleader = ","
 
+Bundle 'Townk/vim-autoclose'
 Bundle 'tpope/vim-surround'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'kien/ctrlp.vim'
