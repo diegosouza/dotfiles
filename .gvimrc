@@ -1,4 +1,4 @@
-set guifont=Ubuntu\ Mono\ 13
+set guifont=Hack\ 11
 
 set guioptions-=r
 set guioptions-=R
