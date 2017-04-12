@@ -7,7 +7,6 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle, required
 Plugin 'Townk/vim-autoclose'
-Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ctrlpvim/ctrlp.vim'
 let g:ctrlp_working_path_mode='' "Pesquisa a partir do diretório atual no Vim.
@@ -18,23 +17,24 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(so|class|gif|png|jpg|jpeg)$',
 \}
 
-Plugin 'aquach/vim-http-client'
-let g:http_client_result_vsplit = 0
-
-Plugin 'tpope/vim-vinegar'
-Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline'
 let g:airline_powerline_fonts=1
 ret g:airline_detect_paste=1
 let g:airline#extensions#branch#enabled=1
-let g:airline#extensions#syntastic#enabled=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 Plugin 'vim-airline/vim-airline-themes'
 
-Plugin 'mileszs/ack.vim'
 Plugin 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
+
+Plugin 'w0rp/ale'
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '>'
+let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 Plugin 'spf13/vim-colors'
 Plugin 'diegosouza/tomorrow-theme'
