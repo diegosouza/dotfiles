@@ -39,6 +39,7 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 Plugin 'spf13/vim-colors'
 Plugin 'diegosouza/tomorrow-theme'
 Plugin 'baskerville/bubblegum'
+Plugin 'trevordmiller/nova-vim'
 
 " set leader key to comma
 let mapleader = ","
@@ -107,6 +108,6 @@ call vundle#end()            " required
 filetype plugin on
 filetype plugin indent on
 
-colorscheme Tomorrow-Night-Bright
+colorscheme nova
 set t_Co=256
 highlight Normal ctermbg=NONE
