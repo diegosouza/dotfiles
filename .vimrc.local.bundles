@@ -1,0 +1,12 @@
+Plug 'diegosouza/tomorrow-theme'
+Plug 'baskerville/bubblegum'
+Plug 'trevordmiller/nova-vim'
+
+Plug 'ctrlpvim/ctrlp.vim'
+let g:ctrlp_working_path_mode='' "Pesquisa a partir do diretório atual
+let g:ctrlp_match_window = 'max:20,results:20'
+let g:ctrlp_show_hidden = 0
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.(git|svn))$',
+  \ 'file': '\v\.(so|class|gif|png|jpg|jpeg)$',
+\}
