@@ -1,1 +1,3 @@
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/node_modules
+
 silent! colorscheme nova
