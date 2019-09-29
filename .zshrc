@@ -80,14 +80,12 @@ plugins=(
     github
     gitignore
     gpg-agent
-    keychain
     node
     npm
     npx
     nvm
     pip
     postgres
-    rails
     rake
     ruby
     rvm
