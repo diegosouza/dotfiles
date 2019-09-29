@@ -10,3 +10,5 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](\.(git|svn))$',
   \ 'file': '\v\.(so|class|gif|png|jpg|jpeg)$',
 \}
+
+Plug 'adoy/vim-php-refactoring-toolbox'
