@@ -12,3 +12,20 @@ let g:ctrlp_custom_ignore = {
 \}
 
 Plug 'adoy/vim-php-refactoring-toolbox'
+function! IPhpInsertUse()
+    call PhpInsertUse()
+    call feedkeys('a',  'n')
+endfunction
+autocmd FileType php imap <C-@> <C-Space>
+autocmd FileType php imap <C-Space> <C-x><C-o>
+autocmd FileType php inoremap <C-Space> <Esc>:call IPhpInsertUse()<CR>
+autocmd FileType php noremap <C-Space> :call PhpInsertUse()<CR>
+
+set tags+=tags,tags.vendors
+
+function! PhpTags()
+  let f = expand("%:p")
+  let cwd = getcwd()
+  let cmd = 'ctags -R --PHP-kinds=cfi src; ctags -R --PHP-kinds=cfi -f tags.vendors vendor'
+  let resp = system(cmd)
+endfunction
