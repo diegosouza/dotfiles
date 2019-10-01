@@ -1,3 +1,6 @@
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/node_modules
 
+" double ESC to save the current file
+map <Esc><Esc> :w<CR>
+
 silent! colorscheme nova
