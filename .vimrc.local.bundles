@@ -21,11 +21,6 @@ autocmd FileType php imap <C-Space> <C-x><C-o>
 autocmd FileType php inoremap <C-Space> <Esc>:call IPhpInsertUse()<CR>
 autocmd FileType php noremap <C-Space> :call PhpInsertUse()<CR>
 
-set tags+=tags,tags.vendors
-
-function! PhpTags()
-  let f = expand("%:p")
-  let cwd = getcwd()
-  let cmd = 'ctags -R --PHP-kinds=cfi src; ctags -R --PHP-kinds=cfi -f tags.vendors vendor'
-  let resp = system(cmd)
-endfunction
+Plug 'ludovicchabant/vim-gutentags'
+let g:gutentags_cache_dir = expand('~/.cache/tags')
+set statusline+=%{gutentags#statusline()}
