@@ -1,2 +1,8 @@
 --recurse=yes
 --exclude=.git
+--exclude=node_modules/*
+--exclude=config.php
+--exclude=db/*
+--exclude=log/*
+--exclude=logs/*
+--PHP-kinds=+ncfit-va
