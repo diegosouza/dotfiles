@@ -2,6 +2,7 @@
 --exclude=.git
 --exclude=node_modules/*
 --exclude=config.php
+--exclude=*.blade.php
 --exclude=db/*
 --exclude=log/*
 --exclude=logs/*
