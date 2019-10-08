@@ -1,4 +1,6 @@
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/node_modules
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/node_modules,*/vendor/,*/storage/framework
+
+set path+=**
 
 " double ESC to save the current file
 map <Esc><Esc> :w<CR>
