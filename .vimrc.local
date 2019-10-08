@@ -5,4 +5,15 @@ set path+=**
 " double ESC to save the current file
 map <Esc><Esc> :w<CR>
 
+" Only run linters named in ale_linters settings.
+let g:ale_linters_explicit = 1
+let g:ale_linters = {
+\   'javascript': [],
+\   'php': ['phpcs', 'phpstan', 'php'],
+\   'ansible': ['ansible-lint'],
+\   'sh': ['shellcheck'],
+\}
+let g:ale_php_phpcs_standard = 'PSR2'
+let g:phpstan_analyse_level = 0
+
 silent! colorscheme nova
