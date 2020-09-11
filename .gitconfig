@@ -8,6 +8,14 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
+    pager = delta
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    line-numbers = true
+    side-by-side = false
+    minus-style = red bold
+    plus-style = green bold
 [merge]
 	tool = meld
 [diff]
