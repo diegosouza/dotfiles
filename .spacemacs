@@ -49,6 +49,7 @@ This function should only modify configuration layer settings."
      gtags
      helm
      html
+     javascript
      lsp
      markdown
      multiple-cursors
@@ -56,7 +57,7 @@ This function should only modify configuration layer settings."
      (php :variables
           php-backend 'lsp)
      python
-     ;; org
+     org
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
@@ -67,9 +68,10 @@ This function should only modify configuration layer settings."
      (version-control :variables
                       version-control-diff-side 'right)
      tabs
+     themes-megapack
      (treemacs :variables
                treemacs-use-git-mode 'extended)
-     )
+     yaml)
 
 
    ;; List of additional packages that will be installed without being wrapped
@@ -214,7 +216,7 @@ It should only modify the values of Spacemacs settings."
 
    ;; If non-nil, *scratch* buffer will be persistent. Things you write down in
    ;; *scratch* buffer will be saved and restored automatically.
-   dotspacemacs-scratch-buffer-persistent nil
+   dotspacemacs-scratch-buffer-persistent t
 
    ;; If non-nil, `kill-buffer' on *scratch* buffer
    ;; will bury it instead of killing.
@@ -308,7 +310,7 @@ It should only modify the values of Spacemacs settings."
    dotspacemacs-auto-save-file-location 'cache
 
    ;; Maximum number of rollback slots to keep in the cache. (default 5)
-   dotspacemacs-max-rollback-slots 5
+   dotspacemacs-max-rollback-slots 100
 
    ;; If non-nil, the paste transient-state is enabled. While enabled, after you
    ;; paste something, pressing `C-j' and `C-k' several times cycles through the
@@ -348,7 +350,7 @@ It should only modify the values of Spacemacs settings."
    ;; If non-nil the frame is maximized when Emacs starts up.
    ;; Takes effect only if `dotspacemacs-fullscreen-at-startup' is nil.
    ;; (default nil) (Emacs 24.4+ only)
-   dotspacemacs-maximized-at-startup nil
+   dotspacemacs-maximized-at-startup t
 
    ;; If non-nil the frame is undecorated when Emacs starts up. Combine this
    ;; variable with `dotspacemacs-maximized-at-startup' in OSX to obtain
