@@ -528,6 +528,7 @@ before packages are loaded."
   (require 'exec-path-from-shell)
   (exec-path-from-shell-copy-env "SSH_AUTH_SOCK")
 
+  (define-key evil-normal-state-map (kbd "SPC \\") 'treemacs)
   (define-key evil-normal-state-map (kbd "g t") 'centaur-tabs-forward)
   (define-key evil-normal-state-map (kbd "g T") 'centaur-tabs-backward)
 
