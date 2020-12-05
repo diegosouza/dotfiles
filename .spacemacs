@@ -52,8 +52,7 @@ This function should only modify configuration layer settings."
      markdown
      multiple-cursors
      nginx
-     (php :variables
-          php-backend 'lsp)
+     php
      python
      org
      ;; (shell :variables
