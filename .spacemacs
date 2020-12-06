@@ -374,7 +374,7 @@ It should only modify the values of Spacemacs settings."
    ;; If non-nil unicode symbols are displayed in the mode line.
    ;; If you use Emacs as a daemon and wants unicode characters only in GUI set
    ;; the value to quoted `display-graphic-p'. (default t)
-   dotspacemacs-mode-line-unicode-symbols t
+   dotspacemacs-mode-line-unicode-symbols nil
 
    ;; If non-nil smooth scrolling (native-scrolling) is enabled. Smooth
    ;; scrolling overrides the default behavior of Emacs which recenters point
@@ -528,9 +528,19 @@ before packages are loaded."
   (require 'exec-path-from-shell)
   (exec-path-from-shell-copy-env "SSH_AUTH_SOCK")
 
+  (global-set-key (kbd "M-<left>") 'shrink-window-horizontally)
+  (global-set-key (kbd "M-<right>") 'enlarge-window-horizontally)
+  (global-set-key (kbd "M-<down>") 'enlarge-window)
+  (global-set-key (kbd "M-<up>") 'shrink-window)
+
+  (global-set-key (kbd "<f2>") 'spacemacs/rename-current-buffer-file)
+  (global-set-key (kbd "C-s") 'save-buffer)
+
   (define-key evil-normal-state-map (kbd "SPC \\") 'treemacs)
-  (define-key evil-normal-state-map (kbd "g t") 'centaur-tabs-forward)
-  (define-key evil-normal-state-map (kbd "g T") 'centaur-tabs-backward)
+
+  (centaur-tabs-headline-match)
+  (setq centaur-tabs-style "box")
+  (setq centaur-tabs--buffer-show-groups nil)
 
   (defun centaur-tabs-hide-tab (x)
     "Do no to show buffer X in tabs."
@@ -558,6 +568,7 @@ before packages are loaded."
        (string-prefix-p "*Messages" name)
        (string-prefix-p "*spacemacs" name)
        (string-prefix-p "*quelpa" name)
+       (string-prefix-p "*elixir-ls*" name)
        (string-prefix-p "*dotfile" name)
        (string-prefix-p ".custom-settings" name)
 
