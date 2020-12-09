@@ -55,3 +55,7 @@
 
 (use-package! exec-path-from-shell
   :config (exec-path-from-shell-copy-env "SSH_AUTH_SOCK"))
+
+
+(setq projectile-project-search-path "~/repos/")
+(setq lsp-clients-elixir-server-executable "elixir-ls")
