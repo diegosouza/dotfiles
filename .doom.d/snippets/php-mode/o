@@ -1,0 +1,5 @@
+# name: $o->...
+# key: o
+# type: command
+# --
+(doom-snippets-expand :name "$o->...")
