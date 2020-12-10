@@ -1,5 +1,6 @@
-# name: $o->...
+# -*- mode: snippet -*-
+# name: $obj->var
 # key: o
-# type: command
+# uuid: o
 # --
-(doom-snippets-expand :name "$o->...")
+\$${1:obj_name}->${2:var}
