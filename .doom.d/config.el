@@ -64,3 +64,8 @@
   :config
   (setq lsp-enable-file-watchers t)
   (setq lsp-file-watch-threshold 15000))
+
+(global-set-key (kbd "C-s") 'save-buffer)
+(global-set-key (kbd "<f2>") 'rename-file)
+
+(define-key evil-normal-state-map (kbd "SPC \\") 'neotree-toggle)
