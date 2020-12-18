@@ -68,4 +68,13 @@
 (global-set-key (kbd "C-s") 'save-buffer)
 (global-set-key (kbd "<f2>") 'rename-file)
 
+(global-set-key (kbd "M-0") 'neotree-toggle)
+(global-set-key (kbd "M-1") 'winum-select-window-1)
+(global-set-key (kbd "M-2") 'winum-select-window-2)
+(global-set-key (kbd "M-3") 'winum-select-window-3)
+(global-set-key (kbd "M-4") 'winum-select-window-4)
+(global-set-key (kbd "M-5") 'winum-select-window-5)
+
+(global-set-key (kbd "M-9") 'list-flycheck-errors)
+
 (define-key evil-normal-state-map (kbd "SPC \\") 'neotree-toggle)
