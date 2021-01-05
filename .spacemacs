@@ -525,9 +525,6 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
-  (require 'exec-path-from-shell)
-  (exec-path-from-shell-copy-env "SSH_AUTH_SOCK")
-
   (global-set-key (kbd "M-<left>") 'shrink-window-horizontally)
   (global-set-key (kbd "M-<right>") 'enlarge-window-horizontally)
   (global-set-key (kbd "M-<down>") 'enlarge-window)
