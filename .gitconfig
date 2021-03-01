@@ -3,8 +3,10 @@
 	email = diegosouza.br@gmail.com
 [color]
 	ui = true
+[pull]
+    rebase = true
 [push]
-	default = tracking
+	default = current
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
