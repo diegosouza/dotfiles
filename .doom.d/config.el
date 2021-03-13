@@ -62,6 +62,8 @@
   (setq lsp-enable-file-watchers t)
   (setq lsp-file-watch-threshold 15000))
 
+(setq php-mode-coding-style 'psr2)
+
 (global-set-key (kbd "C-s") 'save-buffer)
 (global-set-key (kbd "<f2>") 'rename-file)
 
