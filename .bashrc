@@ -23,5 +23,8 @@ esac
 
 export PATH="~/.local/bin/:$PATH"
 export PATH="~/.config/composer/vendor/bin/:$PATH"
+export PATH="~/.emacs.d/bin/:$PATH"
+
+export EDITOR=vim
 
 eval "$(starship init bash)"
