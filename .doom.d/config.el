@@ -55,8 +55,6 @@
 
 (setq projectile-project-search-path "~/repos/")
 
-(setq lsp-clients-elixir-server-executable "elixir-ls")
-
 (use-package! lsp-mode
   :config
   (setq lsp-enable-file-watchers t)
@@ -77,3 +75,19 @@
 (global-set-key (kbd "M-9") 'list-flycheck-errors)
 
 (define-key evil-normal-state-map (kbd "SPC \\") 'neotree-toggle)
+
+(use-package! elixir-mode
+  :init
+  (add-hook 'elixir-mode-hook
+            (lambda ()
+              (push '(">=" . ?\u2265) prettify-symbols-alist)
+              (push '("<=" . ?\u2264) prettify-symbols-alist)
+              (push '("!=" . ?\u2260) prettify-symbols-alist)
+              (push '("==" . ?\u2A75) prettify-symbols-alist)
+              (push '("=~" . ?\u2245) prettify-symbols-alist)
+              (push '("<-" . ?\u2190) prettify-symbols-alist)
+              (push '("->" . ?\u2192) prettify-symbols-alist)
+              (push '("<-" . ?\u2190) prettify-symbols-alist)
+              (push '("|>" . ?\u25B7) prettify-symbols-alist))))
+
+(setq lsp-clients-elixir-server-executable "/usr/bin/elixir-ls")
